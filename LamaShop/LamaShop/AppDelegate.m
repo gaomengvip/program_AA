@@ -24,6 +24,7 @@
     UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"东哥正在写代码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"确认", nil];
     NSLog(@"123");
     NSLog(@"234");
+    NSLog(@"高萌狗");
     [alertView show];
     
     UIAlertView *alert = [[UIAlertView alloc]init];
