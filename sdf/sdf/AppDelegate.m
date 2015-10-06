@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  LamaShop
+//  sdf
 //
 //  Created by lanou3g on 15/10/6.
-//  Copyright (c) 2015年 蓝鸥科技. All rights reserved.
+//  Copyright © 2015年 LiYC. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -16,20 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    NSLog(@"开始写代码");
-    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"东哥正在写代码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"确认", nil];
-    NSLog(@"123");
-    NSLog(@"234");
-    [alertView show];
-    
-    UIAlertView *alert = [[UIAlertView alloc]init];
-    
-    
-    
     return YES;
 }
 
