@@ -27,12 +27,35 @@
     NSLog(@"高萌狗");
     [alertView show];
     
-    UIAlertView *alert = [[UIAlertView alloc]init];
+    
+    
+    
+    [alertView setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
+    UITextField *field1 = [alertView textFieldAtIndex:0];
+    field1.placeholder = @"组长好";
+    UITextField *field2 = [alertView textFieldAtIndex:1];
+    field2.placeholder = @"你们好";
+    [alertView show];
+    
     
     
     
     return YES;
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        self.window.backgroundColor = [UIColor magentaColor];
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"回不去了" delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        [alertView show];
+    }else{
+        self.window.backgroundColor = [UIColor yellowColor];
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"东哥欢迎你们回来----此页面将固定" delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
