@@ -22,6 +22,7 @@
     [self.window makeKeyAndVisible];
     NSLog(@"开始写代码");
     UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"东哥正在写代码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"确认", nil];
+    NSLog(@"123");
     [alertView show];
     return YES;
 }
